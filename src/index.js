@@ -1,6 +1,6 @@
 import './index.css';
 
-const dynamicList = document.querySelector('.score-conatiner');
+const dynamicList = document.getElementById('score-conatiner');
 const listItems = document.createElement('li');
 const playerName = document.createElement('span');
 playerName.textContent = 'Name';
@@ -12,3 +12,4 @@ listItems.appendChild(playerName);
 listItems.appendChild(seperator);
 listItems.appendChild(playerScore);
 dynamicList.appendChild(listItems);
+dynamicList.innerHTML += ' <li><span>Name:</span><span>20</span></li>';
